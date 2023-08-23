@@ -1,31 +1,7 @@
 import { useCallback } from "react";
 import "antd/dist/antd.min.css";
 import { Menu, Dropdown, Button } from "antd";
-import {
-  DownOutlined,
-  ArrowLeftOutlined,
-  ArrowRightOutlined,
-  CalendarOutlined,
-  CheckOutlined,
-  ClockCircleOutlined,
-  CloseOutlined,
-  DeleteOutlined,
-  EditOutlined,
-  ExclamationCircleOutlined,
-  HeartOutlined,
-  LeftOutlined,
-  LockOutlined,
-  MailOutlined,
-  PaperClipOutlined,
-  PhoneOutlined,
-  QuestionCircleOutlined,
-  ReloadOutlined,
-  RightOutlined,
-  SearchOutlined,
-  SendOutlined,
-  ShareAltOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { DownOutlined,} from "@ant-design/icons";
 import { useRouter } from "next/router";
 
 const Hero = () => {
@@ -49,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-col items-center justify-start gap-[17px] text-base text-primary-400 font-body-regular-600">
-          <div className="flex flex-row items-start justify-start gap-[10px]">
+          <div className="flex flex-row items-start justify-start gap-[5px]">
             <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded overflow-hidden flex flex-row items-start justify-start">
               <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
                 Rent

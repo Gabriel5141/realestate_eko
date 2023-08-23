@@ -1,85 +1,100 @@
 import PropertyCard from "./property-card";
 
 const RentPropertiesCard = () => {
+  const properties = [
+    {
+      imgUrl: "/unsplashrlwe8f8anoc7@2x.png",
+      name: "92 Allium Place, Orlando FL",
+      price: "590,632",
+    },
+    {
+      imgUrl: "/unsplashrlwe8f8anoc8@2x.png",
+      name: "92 Allium Place, Orlando FL",
+      price: "590,632",
+    },
+    {
+      imgUrl: "/unsplashrlwe8f8anoc9@2x.png",
+      name: "92 Allium Place, Orlando FL",
+      price: "590,632",
+    },
+    {
+      imgUrl: "/unsplashrlwe8f8anoc10@2x.png",
+      name: "92 Allium Place, Orlando FL",
+      price: "590,632",
+    },
+  ];
+
   return (
-    <div className="self-stretch flex flex-col py-[86px] px-0 items-center justify-start gap-[39px] text-center text-21xl text-primary-800 font-body-regular-600">
-      <div className="self-stretch flex flex-col items-center justify-start gap-[40px] max-w-[95%px] md:pl-[60px] md:pr-[60px] md:box-border">
-        <div className="w-[688px] flex flex-col items-center justify-start gap-[24px] max-w-[95%px] lg:max-w-[95%] md:self-stretch md:w-auto">
-          <div className="self-stretch relative leading-[48px] font-semibold">
-            Latest Properties of Rent
-          </div>
-          <div className="self-stretch relative text-xl leading-[28px] text-lightslategray">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae; Proin sodales ultrices nulla blandit
-            volutpat.
-          </div>
-        </div>
-        <div className="self-stretch flex flex-row flex-wrap py-0 px-2.5 items-center justify-center gap-[32px]">
-          <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc7@2x.png"
-            imageDimensionIds="/car5.svg"
-            imageDimensionValues="/bathtub5.svg"
-            imageDimensionIdsAndValue="/arrowsout2.svg"
-            imageDimensionIdsAndValue2="/ellipse-1@2x.png"
-            imageDimensionIdsAndValue3="/sharenetwork6.svg"
-            imageDimensionIdsAndValue4="/heart2.svg"
-            imageDimensionIdsAndValue5="/plus7.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
-          />
-          <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc8@2x.png"
-            imageDimensionIds="/car5.svg"
-            imageDimensionValues="/bathtub5.svg"
-            imageDimensionIdsAndValue="/arrowsout2.svg"
-            imageDimensionIdsAndValue2="/ellipse-1@2x.png"
-            imageDimensionIdsAndValue3="/sharenetwork6.svg"
-            imageDimensionIdsAndValue4="/heart2.svg"
-            imageDimensionIdsAndValue5="/plus8.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
-          />
-          <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc9@2x.png"
-            imageDimensionIds="/car6.svg"
-            imageDimensionValues="/bathtub.svg"
-            imageDimensionIdsAndValue="/arrowsout3.svg"
-            imageDimensionIdsAndValue2="/ellipse-1@2x.png"
-            imageDimensionIdsAndValue3="/sharenetwork7.svg"
-            imageDimensionIdsAndValue4="/heart2.svg"
-            imageDimensionIdsAndValue5="/plus3.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
-          />
-          <PropertyCard
-            imageDimensions="/unsplashrlwe8f8anoc10@2x.png"
-            imageDimensionIds="/car6.svg"
-            imageDimensionValues="/bathtub.svg"
-            imageDimensionIdsAndValue="/arrowsout3.svg"
-            imageDimensionIdsAndValue2="/ellipse-1@2x.png"
-            imageDimensionIdsAndValue3="/sharenetwork7.svg"
-            imageDimensionIdsAndValue4="/heart2.svg"
-            imageDimensionIdsAndValue5="/plus3.svg"
-            propWidth="unset"
-            propFlex="1"
-            propMinWidth="355px"
-            propMaxWidth="400px"
-          />
+    <div className="self-stretch flex flex-col py-8 px-0 items-center justify-start gap-10 text-center text-4xl text-primary-800 font-semibold">
+      <div className="max-w-2xl md:px-10">
+        <div className="text-xl leading-7 text-lightslategray mb-8">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.
         </div>
       </div>
-      <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded flex flex-row items-start justify-start">
-        <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center inline-block">
-          Load more listing
-        </button>
+      <div className="flex flex-wrap justify-center gap-8">
+        {properties.map((property, index) => (
+          <PropertyCard
+            key={index}
+            imgUrl={property.imgUrl}
+            name={property.name}
+            price={property.price}
+          />
+        ))}
+      </div>
+      <button className="cursor-pointer border-none py-3 px-6 bg-primary-500 rounded flex items-start justify-start">
+        <div className="text-base font-medium text-white">
+          Load more listings
+        </div>
       </button>
     </div>
   );
 };
 
 export default RentPropertiesCard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
