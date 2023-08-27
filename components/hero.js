@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="self-stretch flex flex-col items-center justify-start gap-[17px] text-base text-primary-400 font-body-regular-600">
-          <div className="flex flex-row items-start justify-start gap-[5px]">
+          <div className="flex flex-row items-start justify-start gap-[10px]">
             <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded overflow-hidden flex flex-row items-start justify-start">
               <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
                 Rent
@@ -42,7 +42,7 @@ const Hero = () => {
                   Locations
                 </div>
                 <Dropdown
-                  overlay={
+                  menu={
                     <Menu>
                       {[{ value: "New York" }, { value: "Los Angeles" }].map(
                         (option, index) => (
